@@ -1,0 +1,8 @@
+Package: openocd
+Version: 1.0
+Architecture: all
+Essential: no
+Priority: optional
+Depends:
+Maintainer: Saurabh Raj
+Description: A short description of my-program that will be displayed when the package is being selected
