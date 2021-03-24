@@ -1,13 +1,14 @@
 #!/bin/bash
 
+dpkg -i openocd-all.deb
 ar x openocd-all.deb
 tar -xvf data.tar.xz
-#cd code
-#sudo ./bootstrap
-#sudo ./configure --enable-maintainer-mode --disable-werror --enable-ft2232_libftdi
-#sudo make
-#sudo make install
-
+dpkg -i openocd-all.deb
+chmod +x openocd
 cp openocd /usr/local/bin
+rm -rf control.tar.xz debian-binary data.tar.xz openocd usr 
+
+
+
 
 exit
