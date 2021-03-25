@@ -3,7 +3,7 @@
 
 ar x openocd-all.deb
 tar -xvf data.tar.xz
-dpkg -i openocd-all.deb
+#dpkg -i openocd-all.deb
 chmod +x openocd
 cp openocd /usr/local/bin
 
