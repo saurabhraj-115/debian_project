@@ -3,7 +3,7 @@
 #preinstall file
 
 
-sudo apt-get install libtool autoconf texinfo libusb-dev
+#sudo apt-get install libtool autoconf texinfo libusb-dev
 #
 # wget https://www.intra2net.com/en/developer/libftdi/download/confuse-2.5.tar.gz
 # tar -xvf
