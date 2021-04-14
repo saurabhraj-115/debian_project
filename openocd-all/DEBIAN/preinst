@@ -3,9 +3,13 @@
 #preinstall file
 
 
-#sudo apt-get install libtool autoconf texinfo libusb-dev
-#
-# wget https://www.intra2net.com/en/developer/libftdi/download/confuse-2.5.tar.gz
-# tar -xvf
+sudo apt update
+sudo apt install postgresql postgresql-contrib
+sudo -u postgres createuser --interactive
+sudo -u postgres createdb newdb
+sudo adduser newdb
+sudo -u newdb psql
+new db < pgre.sql
+\d
 
 exit
