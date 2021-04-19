@@ -5,33 +5,13 @@
 
 sudo apt-get update
 sudo apt-get install postgresql postgresql-contrib
-sudo rm -rf /var/lib/dpkg/lock*
-sudo dpkg --configure -a
-#sudo apt-get install postgresql postgresql-contrib
-#sudo apt-get install postgresql-contrib
-#sudo -u postgres createuser --interactive
-#sudo -u postgres createdb new1db
-#sudo adduser new1db
+sudo -u postgres createuser --interactive
+sudo -u postgres createdb new1db
+sudo adduser new1db
+sudo apt install postgresql-client-common
 #sudo -u newdb psql
 #new db < pgre.sql
 #\du+
 
-
-# Create the file repository configuration:
-#sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
-
-# Import the repository signing key:
-#wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
-
-# Update the package lists:
-#sudo apt-get update
-
-
-#sudo rm -rf /var/lib/dpkg/lock*
-#sudo dpkg --configure -a
-
-# Install the latest version of PostgreSQL.
-# If you want a specific version, use 'postgresql-12' or similar instead of 'postgresql':
-#sudo apt-get -y install postgresql
 
 exit
